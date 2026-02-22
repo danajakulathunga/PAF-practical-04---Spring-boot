@@ -6,6 +6,27 @@ This is a Spring Boot REST API application developed for the **IT3030 – PAF (P
 
 **Student ID:** IT23288430
 
+## Project Structure
+
+```
+IT23288430/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/
+│   │   │       ├── IT23288430_Practical_04.java    # Main REST controller
+│   │   │       └── demo/
+│   │   │
+│   │   └── resources/
+│   │
+│   └── test/
+│
+├── pom.xml                                          # Maven configuration
+├── mvnw                                             # Maven wrapper (Linux/Mac)
+├── mvnw.cmd                                         # Maven wrapper (Windows)
+└── README.md                                        # This file
+```
+
 ## Technologies Used
 
 - **Framework:** Spring Boot 4.0.3
@@ -113,87 +134,3 @@ Or simply visit these URLs in your web browser:
 - http://localhost:8080/greet
 - http://localhost:8080/greet/Dhanaja
 - http://localhost:8080/greet/Dhanaja?message=Hiiii!
-
-## Project Structure
-
-```
-IT23288430/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/example/
-│   │   │       ├── IT23288430_Practical_04.java    # Main REST controller
-│   │   │       └── demo/
-│   │   │
-│   │   └── resources/
-│   │
-│   └── test/
-│
-├── pom.xml                                          # Maven configuration
-├── mvnw                                             # Maven wrapper (Linux/Mac)
-├── mvnw.cmd                                         # Maven wrapper (Windows)
-└── README.md                                        # This file
-```
-
-## Key Features
-
-- **Simple REST API:** Demonstrates basic REST endpoint creation
-- **Path Variables:** Shows how to extract parameters from URL path
-- **Query Parameters:** Demonstrates optional query parameter handling
-- **Spring Boot:** Uses Spring Boot for rapid development and minimal configuration
-
-## Configuration
-
-The application uses default Spring Boot settings. To customize the port or other settings, edit `src/main/resources/application.properties`:
-
-```properties
-# Change server port if needed
-server.port=8080
-```
-
-## Dependencies
-
-The project uses the following main dependencies:
-
-- `spring-boot-starter-web` - Spring Web MVC starter for building web applications
-- `spring-boot-starter-test` - Testing support for Spring Boot applications
-
-## Troubleshooting
-
-### Port Already in Use
-
-If port 8080 is already in use, you can change it by modifying `application.properties`:
-
-```properties
-server.port=9090
-```
-
-### Maven Build Issues
-
-If you encounter build issues, try:
-
-```bash
-mvn clean install
-```
-
-### Java Version Mismatch
-
-Ensure you have Java 17 installed. Check your Java version:
-
-```bash
-java -version
-```
-
-## Author
-
-**Student ID:** IT23288430
-**Course:** IT3030 – Platform and Application Framework
-**Academic Institution:** SLIIT (Sri Lanka Institute of Information Technology)
-
-## License
-
-This project is created for educational purposes as part of the PAF practical assignment.
-
----
-
-**Last Updated:** February 2026
